@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Personel_Sistem_Yonetim
@@ -42,6 +37,7 @@ namespace Personel_Sistem_Yonetim
                 command.Parameters.AddWithValue("@p1", txtSifre.Text);
                 SqlDataReader reader = command.ExecuteReader();
                 bool result =reader.Read();
+                connection.Close(); 
                 return result;
             }
             else

@@ -155,6 +155,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kullanı);
             this.Name = "AdminPaneli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPaneli";
             this.ResumeLayout(false);
             this.PerformLayout();
